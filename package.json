@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-social-preview",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Custom n8n node to generate social media preview images (Open Graph) using Satori and resvg-js.",
   "license": "MIT",
   "homepage": "https://github.com/victor-lis/n8n-social-preview-node",
