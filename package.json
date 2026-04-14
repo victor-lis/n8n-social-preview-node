@@ -1,23 +1,30 @@
 {
   "name": "n8n-nodes-social-preview",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom n8n node to generate social media preview images (Open Graph) using Satori and resvg-js.",
   "license": "MIT",
   "homepage": "https://github.com/victor-lis/n8n-social-preview-node",
-  "keywords": [
-    "n8n-community-node-package"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/victor-lis/n8n-social-preview-node"
+  },
   "author": {
     "name": "Victor Lis Bronzo",
     "email": "victorlisbronzo1@gmail.com"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/victor-lis/n8n-social-preview-node.git"
+  "keywords": [
+    "n8n-community-node-package",
+    "social-preview",
+    "open-graph",
+    "satori",
+    "image-generation"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=9.0.0"
   },
   "scripts": {
     "build": "n8n-node build",
-    "build:watch": "tsc --watch",
     "dev": "n8n-node dev",
     "lint": "n8n-node lint",
     "lint:fix": "n8n-node lint --fix",
@@ -28,31 +35,19 @@
     "dist"
   ],
   "n8n": {
-    "n8nNodesApiVersion": 1,
-    "strict": false,
-    "credentials": [],
     "nodes": [
       "dist/nodes/SocialPreview/SocialPreview.node.js"
     ]
   },
   "devDependencies": {
-    "@n8n/node-cli": "*",
-    "@types/node": "^25.6.0",
-    "@types/node-fetch": "^2.6.13",
-    "@types/parse-path": "^7.1.0",
-    "@types/semver": "^7.7.1",
-    "@types/tough-cookie": "^4.0.5",
-    "eslint": "9.39.4",
-    "prettier": "3.8.1",
-    "release-it": "19.2.4",
-    "typescript": "5.9.3"
-  },
-  "peerDependencies": {
-    "n8n-workflow": "*"
+    "@n8n/node-cli": "^0.23.1",
+    "@types/node": "^18.19.130",
+    "fast-glob": "^3.3.3",
+    "typescript": "^5.7.3"
   },
   "dependencies": {
     "@resvg/resvg-js": "^2.6.2",
-    "satori": "^0.26.0",
+    "satori": "^0.12.1",
     "satori-html": "^0.3.2"
   }
 }
