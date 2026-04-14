@@ -35,6 +35,7 @@
     "dist"
   ],
   "n8n": {
+    "n8nNodesApiVersion": 1,
     "nodes": [
       "dist/nodes/SocialPreview/SocialPreview.node.js"
     ]
