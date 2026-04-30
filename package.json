@@ -47,6 +47,7 @@
     "@n8n/node-cli": "^0.23.1",
     "@types/node": "^18.19.130",
     "fast-glob": "^3.3.3",
+    "release-it": "^20.0.1",
     "typescript": "^5.7.3"
   },
   "dependencies": {
