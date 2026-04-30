@@ -8,16 +8,16 @@ import {
 } from 'n8n-workflow';
 import { generateSocialPreviewImage } from './services/image-generation.service';
 
-export class SocialPreview implements INodeType {
+export class GitAssets implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Social Preview',
-		name: 'socialPreview',
-		icon: 'file:social-preview.svg',
+		displayName: 'Git Assets',
+		name: 'gitAssets',
+		icon: 'file:git-assets.svg',
 		group: ['transform'],
 		version: 1,
 		description: 'Generates social media preview images (Open Graph) structures.',
 		defaults: {
-			name: 'Social Preview',
+			name: 'Git Assets',
 		},
 		inputs: [NodeConnectionTypes.Main],
 		outputs: [NodeConnectionTypes.Main],

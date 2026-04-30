@@ -1,15 +1,15 @@
 {
-  "name": "n8n-nodes-social-preview",
+  "name": "n8n-nodes-git-assets",
   "publishConfig": {
     "access": "public"
   },
   "version": "1.0.4",
-  "description": "Custom n8n node to generate social media preview images (Open Graph) using Satori and resvg-js.",
+  "description": "Custom n8n node to generate Git assets and social media preview images using Satori and resvg-js.",
   "license": "MIT",
-  "homepage": "https://github.com/victor-lis/n8n-social-preview-node",
+  "homepage": "https://github.com/victor-lis/n8n-git-assets-node",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/victor-lis/n8n-social-preview-node.git"
+    "url": "git+https://github.com/victor-lis/n8n-git-assets-node.git"
   },
   "author": {
     "name": "Victor Lis Bronzo",
@@ -17,7 +17,7 @@
   },
   "keywords": [
     "n8n-community-node-package",
-    "social-preview",
+    "git-assets",
     "open-graph",
     "satori",
     "image-generation"
@@ -40,7 +40,7 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "nodes": [
-      "dist/nodes/SocialPreview/SocialPreview.node.js"
+      "dist/nodes/GitAssets/GitAssets.node.js"
     ]
   },
   "devDependencies": {
